@@ -45,3 +45,7 @@ A zombie survival first peron shooter game.
 5. Unity editor
 6. Version : 2019.4.13f1
 7. Size of editor : 4.10 GB
+
+## Report
+
+[Download here](https://github.com/MsMore/Elpida/files/6641816/Project_Report.pdf)
