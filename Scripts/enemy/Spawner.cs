@@ -8,14 +8,14 @@ public class Spawner : MonoBehaviour
     public GameObject enemy;
     public int count = 0;
 
-    private void Awake() {
+    /*private void Awake() {
         spawners = new GameObject[5];
         for (int i = 0; i < spawners.Length; i ++) {
             spawners [i] = transform.GetChild(i).gameObject;
         }
 
         SpawnEnemy();   
-    }
+    }*/
 
     private void start() {
         spawners = new GameObject[5];
@@ -27,15 +27,15 @@ public class Spawner : MonoBehaviour
     }
 
     
-    /*private void FixedUpdate() {
+    private void FixedUpdate() {
         
         float t = 0.025f;
         t += 0.025f;
         if (t % 3*60000f == 0)
           
-        //if (count < 500)  
-            //SpawnEnemy();
-    }*/
+        if (count < 100)  
+            SpawnEnemy();
+    }
 
     private void SpawnEnemy() {
         //int spawnerID = Random.Range(0, spawners.Length);
